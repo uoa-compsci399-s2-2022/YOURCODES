@@ -3,7 +3,6 @@
 
 <mapper namespace="com.example.myspringboot.modulers.prloblemcode.dao.ProblemcodeDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.example.myspringboot.modulers.prloblemcode.entity.ProblemcodeEntity" id="problemcodeMap">
         <result property="id" column="id"/>
         <result property="problem" column="problem"/>
