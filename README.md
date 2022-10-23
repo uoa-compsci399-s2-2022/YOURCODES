@@ -138,6 +138,8 @@ https://www.javatpoint.com/spring-boot-tutorial
 
 https://juejin.cn/post/6844903683860201486
 
+https://github.com/sunlightcs/d2-admin-renren-security-enterprise
+
 ## Dependencies tool
 | Front-end                           |
 |-------------------------------------|
