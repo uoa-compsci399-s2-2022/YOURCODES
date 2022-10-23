@@ -31,7 +31,6 @@ public class PageUtils implements Serializable {
     private List<?> list;
 
     /**
-     * 分页
      * @param list        table data
      * @param totalCount  The total number of records
      * @param pageSize    Records per page
