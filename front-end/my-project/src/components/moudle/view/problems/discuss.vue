@@ -41,7 +41,7 @@
               </div>
               <!-- title area -->
               <div class="description">
-                <span class="demonstration">comment  <el-button type="text" size="small" @click="dissSubmit">submit</el-button></span>
+                <span class="demonstration">Comment  <el-button type="text" size="small" @click="dissSubmit">Submit</el-button></span>
                 <el-input
                   type="textarea"
                   placeholder="Please enter content"
