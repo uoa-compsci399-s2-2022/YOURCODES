@@ -41,9 +41,9 @@ If you encounter problems installing npm, you can search for solutions on google
 
 Create the database myproject with UTF-8 database encoding
 
-Execute the database script, e.g. <mark>db/mysql.sql</mark> for a MySQL database, to initialise the data
+Execute the database script, e.g. <font color=red>db/mysql.sql</font> for a MySQL database, to initialise the data
 
-Modify <mark>application.properties</mark> to change the database account and password
+Modify <font color=red>application.properties</font> to change the database account and password
 
 Run the main method of MyspringbootApplication.java to start the project
 
