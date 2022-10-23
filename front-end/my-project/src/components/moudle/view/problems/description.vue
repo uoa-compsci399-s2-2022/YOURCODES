@@ -113,7 +113,7 @@
               <div class="mod-config">
                 <el-tag type="danger" v-if="mycodes">Review the code after you submit it</el-tag>
                 <el-button @click="getproblemcodeDataList()">Refresh</el-button>
-                <el-button @click="getsubmitproblemcode()">Creatorcode</el-button>
+                <el-button @click="getsubmitproblemcode()">Creator Code</el-button>
                 <el-table
                   :data="mycodedataList"
                   border
