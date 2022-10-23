@@ -17,11 +17,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Map;
 
-/**
- * Query parameters
- *
- * @author Mark sunlightcs@gmail.com
- */
+
 public class Query<T> {
 
     public IPage<T> getPage(Map<String, Object> params) {
