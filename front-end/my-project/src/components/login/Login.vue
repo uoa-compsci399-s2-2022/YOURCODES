@@ -34,7 +34,7 @@
         <br>
         <input type="checkbox" name="" value="Remember Me"> Remember Me
       </div>
-      <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
+      
       <div>
       </div>
     </div>
@@ -108,7 +108,7 @@
               user.password = this.password
               this.$store.commit('doLogin',this.userName)
               this.$store.commit('dopassword',this.password)
-              // 如果是管理员账号
+              //if user is admin
               if(this.userName === 'admin'){
               this.func()
               }else{
@@ -533,12 +533,6 @@
     height: 40px;
     cursor: pointer;
   }
-
-
-
-
-
-
 
 
   div#profile a:hover {
