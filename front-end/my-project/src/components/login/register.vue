@@ -7,12 +7,7 @@
       <nav>
         <div class="navbar">
           <ul class="container gray highlightTextIn">
-            <!-- navagation bar -->
-            <!--<li><a href="./Login.html"><img id="logo" src="./Images/IMG_5625.PNG" alt="Logo"></a></li>-->
             <li><a alt ="Homepage" @click="home">Homepage</a></li>
-<!--            <li><a alt = "Problems" href="http://localhost:63342/my-project/public/file/Problems-list.html">Problems</a></li>-->
-<!--            <li><a alt="Create" href="http://localhost:63342/my-project/public/file/Problem_Create.html">Create</a></li>-->
-<!--            <li><a alt="Leader Board" href="http://localhost:63342/my-project/public/file/Leader-board.html">Leader Board</a></li>-->
           </ul>
         </div>
       </nav>
@@ -34,8 +29,6 @@
         <!-- submit button -->
         <el-button type="submit" id="submit" @click.native="dataFormSubmit">Sign Up</el-button>
         <br>
-        <!-- remember me checkbox -->
-        <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
         <div>
         </div>
       </div>
