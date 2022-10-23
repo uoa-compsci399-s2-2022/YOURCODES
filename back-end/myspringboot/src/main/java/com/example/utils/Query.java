@@ -25,7 +25,6 @@ public class Query<T> {
     }
 
     public IPage<T> getPage(Map<String, Object> params, String defaultOrderField, boolean isAsc) {
-        //Paging parameters
         long curPage = 1;
         long limit = 10;
 
@@ -36,18 +35,15 @@ public class Query<T> {
             limit = Long.parseLong((String)params.get(Constant.LIMIT));
         }
 
-        //Paging object
+    
         Page<T> page = new Page<>(curPage, limit);
 
-        //Paging parameters
         params.put(Constant.PAGE, page);
 
-        //Sort field
         String orderField = SQLFilter.sqlInject((String)params.get(Constant.ORDER_FIELD));
         String order = (String)params.get(Constant.ORDER);
 
 
-        //Front end field sorting
         if(StringUtils.isNotEmpty(orderField) && StringUtils.isNotEmpty(order)){
             if(Constant.ASC.equalsIgnoreCase(order)) {
                 return  page.addOrder(OrderItem.asc(orderField));
@@ -56,12 +52,10 @@ public class Query<T> {
             }
         }
 
-        //No sort field, no sort
         if(StringUtils.isBlank(defaultOrderField)){
             return page;
         }
 
-        //The default sort
         if(isAsc) {
             page.addOrder(OrderItem.asc(defaultOrderField));
         }else {
