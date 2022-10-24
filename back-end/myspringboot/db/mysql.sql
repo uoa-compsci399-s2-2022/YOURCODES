@@ -55,7 +55,7 @@ DROP TABLE IF EXISTS `tb_problem`;
 CREATE TABLE `tb_problem` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
   `title` varchar(100) DEFAULT NULL COMMENT 'Title',
-  `solution` int(50) DEFAULT NULL COMMENT 'Solution',
+  `solution` int(50) DEFAULT 0 COMMENT 'Solution',
   `difficulty` varchar(50) DEFAULT NULL COMMENT 'Difficulty',
   `submissions` int(11) DEFAULT NULL COMMENT 'Submissions',
   `rating` double(10,3) DEFAULT NULL COMMENT 'Rating',
