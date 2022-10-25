@@ -24,7 +24,7 @@ public class ProblemcodeServiceImpl extends ServiceImpl<ProblemcodeDao, Problemc
         String user =(String)  params.get("user");
         IPage<ProblemcodeEntity> page = this.page(
                 new Query<ProblemcodeEntity>().getPage(params),
-                new QueryWrapper<ProblemcodeEntity>().eq("problem",problemid).eq("username",user)
+                new QueryWrapper<ProblemcodeEntity>().eq("problem",problemid)
         );
 
         return new PageUtils(page);
